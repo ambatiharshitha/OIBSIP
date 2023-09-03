@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amul landing page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="img1.img" class="logo"></a>
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">menu</a></li>
+                <li><a href="" >what's new</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+             <h2>it's not ice cream it's<span> baskin robbins</span></h2> <br>
+             <p>Baskin Robbins is one of the worlds largest ice cream chains globally. Our exciting menu with includes universal favorites like the delicious Mississippi Mud and Mint Milk Chocolate along with local favorite flavors like Honey Nut Crunch and Alphonso Mango. Baskin Robbins today operates more than 800+ exclusive Ice Cream Parlours across over 230 cities, making it amongst the largest exclusive ice cream retail chains in India.
+                Its portfolio of 31 high quality international and Indian flavors are made with cows milk and are 100% vegetarian. These represent diverse taste profiles and cater to the needs of millions of customers.</p>
+             <a href="#">learn more</a>
+            </div> 
+        </div>
+        <div class="imgBox">
+            <img src="ice1.img.jpg" class="baskin">
+        </div>
+        <ul class="thumb">
+            <li><a href="#"><img src="ice2.img.jpg" onclick="imgslider('ice2.img.jpg'); changeCircleColor('yellow')"></a></li>
+            <li><a href="#"><img src="ice3.img.jpg" onclick="imgslider('ice3.img.jpg'); changeCircleColor('#eb7495')"></a></li>
+            <li><a href="#"><img src="ice4.img.jpg" onclick="imgslider('ice4.img.jpg'); changeCircleColor('orange')"></a></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgslider(anything){
+            document.querySelector('.baskin').src=anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
